@@ -1,0 +1,32 @@
+<!-- //pinto la tabla con los datos (el ngFor sirve para decirle que pase
+que por todos esos parametros que le he pasado(blucle)) -->
+<!--  -->
+<div>
+    <table class="table table-bordered table-info">
+    <thead>
+        <tr>
+            <th>idCubo</th>
+            <th>nombre</th>
+            <th>modelo</th>
+            <th>marca</th>
+            <th>color</th>
+            <th>imagen</th>
+            <th>precio</th>
+            <th>valoracion</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let cu of cubos">
+            <td>{{cu.idCubo}}</td>
+            <td>{{cu.nombre}}</td>
+            <td>{{cu.modelo}}</td>
+            <td>{{cu.marca}}</td>
+            <td>{{cu.color}}</td>
+            <img src="{{cu.imagen}}"style="width:250px; height: 250px"/>
+            <td>{{cu.precio}}</td>
+            <td>{{cu.valoracion}}</td>
+            <td></td>
+        </tr>
+    </tbody>
+</table>
+</div>
